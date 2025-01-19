@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Slate-300: hsl(212, 45%, 89%);
+    --Slate-500: hsl(216, 15%, 48%);
+    --Slate-900: hsl(218, 44%, 22%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Outfit", serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Slate-300);
+    font-size: 15px;
+}
+
+.main-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--White);
+    padding: 1em;
+    border-radius: 20px;
+}
+
+.qrcode {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2em 2em;
+}
+
+.head {
+    color: var(--Slate-900);
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+}
+
+.description {
+    color: var(--Slate-500);
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 0 1.6em;
+
+}
+
+@media (min-width:800px) {
+    .main-container {
+        width: 35%;
+    }
+}
+
+@media (min-width:1024px) {
+    .main-container {
+        width: 20%;
+    }
+}
